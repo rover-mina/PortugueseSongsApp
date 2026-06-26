@@ -13,4 +13,23 @@ const song = [
     }
 ];
 
-console.log(song);
+const lyricsDiv = document.getElementById("lyrics");
+
+for (const line of song) {
+
+    const card = document.createElement("div");
+    card.className = "lyric-card";
+
+    const pt = document.createElement("div");
+    pt.className = "portuguese";
+    pt.textContent = line.pt;
+
+    const en = document.createElement("div");
+    en.className = "english";
+    en.textContent = line.en;
+
+    card.appendChild(pt);
+    card.appendChild(en);
+
+    lyricsDiv.appendChild(card);
+}
