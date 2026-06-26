@@ -1,3 +1,5 @@
+alert("script.js is running");
+
 const song = [
     {
         pt: "E nessa loucura de dizer que não te quero",
