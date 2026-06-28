@@ -1,4 +1,4 @@
-alert("script.js is running");
+//alert("script.js is running");
 
 const song = [
     {
